@@ -10,7 +10,7 @@ import (
 type album struct {
   ID      string  `json:"id"`
   Title   string  `json:"title"`
-  Artist string  `json:"artist"`
+  Artist  string  `json:"artist"`
   Price   float64 `json:"price"`
 }
 
@@ -65,21 +65,3 @@ func getAlbumsByID(c *gin.Context) {
   }
   c.IndentedJSON(http.StatusNotFound, gin.H{"message": "album not found"})
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
